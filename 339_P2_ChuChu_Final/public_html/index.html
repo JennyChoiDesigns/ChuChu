@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        
+        <title>ChuChu</title>
+    
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/grid.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+       
+    
+        <!--font quicksand, inconsolata, dosis-->
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Inconsolata&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+        
+        <!-- get this line for icon reference:https://www.w3schools.com/icons/icons_reference.asp -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    </head>
+    <body>
+
+        <div id="myTopnav" class="header"> 
+            <nav>
+                <a href="index.html" class="logo font_Quicksand">ChuChu</a>       
+                  <div class="header-right">
+                    <a href="index.html" > Home </a>
+                    <a href="menu.html" >Menu</a>
+                    <a href="location.html" >Location</a>
+                    <a href="cart.html" >
+                        <i class="material-icons">shopping_cart</i>
+                        </a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+
+        <!--Home page with advertising main products with image and context side by side-->
+        <!--Image reference: https://www.californiastrawberries.com/strawberry-stuffed-churros/-->
+    <div class="flex_home">
+        <div class="showcaseBox one">
+            <div class="imgBox">
+                <img src="img/home.jpeg" class="enlarge" alt="Popular Starwberry Churros advertisment" 
+                srcset="img/home.jpeg 154w, img/home308w.jpeg 308w, img/home467w.jpeg 467w"
+                sizes="(min-width: 40rem) 50vw, 100vw">
+            </div>
+        
+            <div class="showcaseContent">
+                <div class="productTitle">
+                    <span class="advertisment font_Quicksand">Very-Berry-Chu</span>
+                    <p class="small_description">Crispy cream Strawberry Churros</p>
+                    <p class="productInfo">
+                        One bite of Crispy churros with the combination of rich, fresh strawberry 
+                        cheese cream and sprinkles will uplift your day.
+                    </p>
+                    <a href="detailsVery.html" class="btn">More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="showcaseBox rev">
+            <div class="showcaseContent1">
+                <div class="productTitle">
+                    <span class="advertisment font_Quicksand">Introducing the "Mega-Box"</span>
+                    <p class="small_description">Spread churros and love for your family & friends!</p>
+                    <p class="productInfo">
+                    Explore our Churros by making a 6 chuchu comnbination Mega-Box.
+                    </p>
+                    <a class="btn">More</a>
+                </div>
+            </div>
+
+            <div class="imgBox">
+                <img src="img/combi154w.jpeg" class="enlarge" alt="Mega-box combination" 
+                srcset="img/combi154w.jpeg 154w, img/combi308w.jpeg 308w, img/combi467w.jpeg 467w" 
+                sizes="(min-width: 40rem) 50vw, 100vw"
+                >
+            </div>
+        </div>
+        
+        <div class="companyHistory"> 
+            <h1>2013</h1>
+            <h2>
+                Our story begins in 2013, as a small food truck beside Vancouver Playland.
+                Today, we are privileged to announce our first store located in Brentwood.
+                We collaborate with local farmers to FRY the best Churros in B.C.
+            </h2>
+        </div>
+
+        
+   
+        <div class="review">
+            <h3 class="text_center1">Reviews</h3>
+            <div class="grid containerWrap four-column two-column one-column">
+                <div class="review_container">
+                    <div class="product_img">
+                        <a id="missChuB" href="detailsMiss.html">
+                            <img src="img/chu1.jpeg" alt="original flavor churros image" class="product_image">
+                        </a>
+                        </div>
+                    <div class="product_text">
+                        <h4 class="name">Jacob Gibson</h4>
+                        <div class="stars">
+                            <i aria-hidden="true" class="fa fa-star"></i>
+                            <i aria-hidden="true" class="fa fa-star"></i>
+                            <i aria-hidden="true" class="fa fa-star"></i>
+                            <i aria-hidden="true" class="fa fa-star"></i>
+                            <i aria-hidden="true" class="fa fa-star-half"></i>
+                        </div>
+                        <i aria-hidden="true" class="fa fa-quote-left"></i>
+                        <p class="font_Dosis">I love how we can watch churros being cooked. Their store was super clean, staffs were amazing too!</p>
+                        <i aria-hidden="true" class="fa fa-quote-right"></i>
+                    </div>
+                    <div class="product_link">
+                        <a id="chocoChuB" href="detailsChoco.html" class="button">Read more</a>
+                    </div>
+                </div>
+    
+                <div class="review_container">
+                    <div class="product_img">
+                        <a id="chocoChuB" href="detailsChoco.html">
+                            <img src="img/choco_c.jpg" alt="Chocolate flavor churros image" class="product_image">
+                        </a>
+                    </div>
+                    <div class="product_text">
+                        <h4 class="name">Grace Kim</h4>
+                        <div class="stars">
+                            <i aria-hidden="true" class="fa fa-star"></i>
+                            <i aria-hidden="true" class="fa fa-star"></i>
+                            <i aria-hidden="true" class="fa fa-star"></i>
+                            <i aria-hidden="true" class="fa fa-star"></i>
+                            <i aria-hidden="true" class="fa fa-star"></i>
+                        </div>
+                        <i aria-hidden="true" class="fa fa-quote-left"></i>
+                        <p>Must try if you love crispy, creamy sweets! 
+                            I'm so happy that we can finally purchase it online!</p>
+                        <i aria-hidden="true" class="fa fa-quote-right"></i>
+                    </div>
+                    <div class="product_link">
+                        <a id="chocoChuB" href="detailsChoco.html" class="button">Read more</a>
+                    </div>
+                </div>
+
+                <div class="review_container">
+                    <div class="product_img">
+                        <a id="veryBerryChuB" href="detailsVery.html">
+                            <img src="img/straw_c.jpg" alt="Strawberry flavor churros image" class="product_image">
+                        </a>
+                    </div>
+                    <div class="product_text">
+                        <h4 class="name">Annika Olson</h4>
+                        <div class="stars">
+                            <i aria-hidden="true" class="fa fa-star"></i>
+                            <i aria-hidden="true" class="fa fa-star"></i>
+                            <i aria-hidden="true" class="fa fa-star"></i>
+                            <i aria-hidden="true" class="fa fa-star"></i>
+                            <i aria-hidden="true" class="fa fa-star-o"></i>
+                        </div>
+                        <i aria-hidden="true" class="fa fa-quote-left"></i>
+                        <p>A total hidden gem! Our family knew this place since 2018. My kids go crazy when I say ChuChu!</p>
+                        <i aria-hidden="true" class="fa fa-quote-right"></i>
+                    </div>
+                    <div class="product_link">
+                        <a id="veryBerryChuB" href="detailsVery.html" class="button">Read more</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    
+
+        <div class="footer">
+            
+            <div class="text-right">
+                <p>Team ChuChu</p>
+                <p>IAT 339 : Summer 2022</p>
+            </div>
+
+            <div class="footer_logo">
+                <a href="index.html" class="logo font_Quicksand">ChuChu</a> 
+            </div>
+
+            <div class="flex_top">
+                <a href="#myTopnav" class="top"> top
+                <i class="material-icons">expand_less</i>
+               </a>
+            </div> 
+            
+        </div>
+
+
+        <script src="js/nav.js"></script>
+    </div>
+    </body>
+</html>

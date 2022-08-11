@@ -1,0 +1,133 @@
+/* first draft from lecture 3*/
+* {
+	box-sizing: border-box;
+}
+
+/*For 2 column grid in Homes*/
+.grid{
+    display:grid;
+}
+
+
+/* 320px/16 = 20rem for mobile
+but just in case 304px...
+304/16=19*/
+@media (min-width:19rem){
+    .grid.one-column{
+        grid-template-columns: 1fr;
+        grid-template-areas: inherit;
+        grid-auto-flow: row;
+    }
+}
+
+/*607px/16 =37.9375rem*/
+@media (min-width:38rem){
+    .grid.two-column{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+        
+    }
+    .grid.grid.five-column{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+    }
+}
+
+/* 1038px/16~= 65rem*/
+
+@media (min-width:65rem){
+    .grid.four-column{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+    }
+    .grid.three-column{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+}
+/*1440px/16 = 90rem*/
+@media (min-width:90rem){
+    .grid.six-column{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+    }
+    .grid.five-column{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+    }
+    .grid.ten-column{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+    }
+}
+
+/* 1920px/16=120rem*/
+@media (min-width:120rem){
+    .grid.eight-column{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+    }
+}
+
+/*
+reference:https://codepen.io/andrewhaw/pen/qBrddGx/e48efd16f04f81d160872dc382095f96
+	Below the selector we have is specified as '.grid.add-gutters'. This means that to have this styling applied in our HTML, we have to select an element that has the classes of BOTH 'grid' and 'add-gutters'. This might look like the following in our HTML:
+
+	<div class="grid add-gutters"> - This would have the styling below applied to it.
+	<div class="add-gutters"> - This would NOT have the styling below applied to it.
+
+	While we could have our .grid class specify the gutters, we may in some cases want a grid structure that does not included gutters. By having a separate class specifically for adding gutters we can apply (or not) this styling easily in our HTML.
+*/
+.grid.add-gutters {
+	
+	/*
+		To add gutters between the columns and rows of our grid structure we have the 'grid-column-gap' and 'grid-row-gap' properties. These will add space between columns or rows of our grid as you specify. In this case, we are adding 1rem of spacing between columns and 0.25rem of spacing between rows.
+	*/
+	grid-column-gap: 1rem;
+	grid-row-gap: 0.25rem;
+}
+
+/*HOME page for first section.*/
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+.showcaseBox{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-auto-flow: row;
+    align-content: normal;
+    justify-content: center;
+    align-items: center;
+    justify-items: normal;
+    flex-direction: column;
+    background-color: #F6BBA9;
+}
+
+
+
+/*HOME page for showcase flex.*/
+
+@media screen and (max-width: 40rem) {
+    .showcaseBox.one {
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+
+    }
+    .showcaseBox.rev {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+
+ 
+     }
+}

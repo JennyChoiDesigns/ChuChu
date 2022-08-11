@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<!-- Base is from https://andrewh.ca/teaches/web_design_and_development/projects/01/Style_Guide_Template.zip -->
+<!-- Decided to use Sooa's P1 Style Guide for churros food truck website-->
+<html lang="en">
+
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ChuChu</title>
+
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+   
+
+    <!--font quicksand for h, inconsolata for p, dosis for li-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Inconsolata&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <header>
+      <h1 class="hfont" id="top">ChuChu</h1>
+
+      <p>This is a style guide for Churros food truck website that called ChuChu (imaginary name not real). </p>
+
+
+      <nav class="grid six-column four-column two-column one-column add-gutters">        
+        <a href="#interactive_elements" class="nav-main-item ">Interactive Elements</a>
+        <a href="#colour_elements" class="nav-main-item ">Colour Elements</a>
+        <a href="#text_elements" class="nav-main-item ">Text Elements</a>
+        <a href="#combined_elements" class="nav-main-item ">Combined Elements</a>
+        <a href="#citations" class="nav-main-item ">Citations</a>
+      </nav>
+	</header>
+
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements" class="element_T">
+      <h2>Interactive Elements</h2>
+
+
+      <section class="element">
+        <h3>In-text link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.intext_link</p>
+
+        <h4>In-text link Code:</h4>
+        <code>
+            &lt;a href="#top" class="intext_link"&gt;Top&lt;/a&gt;<br>
+            &lt;a href="#footer" class="intext_link"&gt;Bottom&lt;/a&gt;
+        </code>
+
+
+        <h4>Rendered element:</h4>
+        <a href="#top" class="intext_link">Top</a>
+        <a href="#footer" class="intext_link">Bottom</a>
+
+      </section>
+
+
+      <!-- Default Button styling section  get idea from here :https://maxquattromani.com/styleguide/-->
+      <section class="element">
+
+        <h3>Navigation Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.button-nav</p>
+
+        <h4>Button Code:</h4>
+        <code>&lt;a href="#" class="button-nav"&gt;Order&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a class="button-nav" href="#">Order</a>
+
+        </section>
+
+        <section class="element">
+        <h3>Different type of button</h3>
+        
+        <h4>CSS selector:</h4>
+        <p>.button-nav, .button-error, .button-disable</p>
+
+        <h4>Different type of button Codes:</h4>
+        <code>&lt;button href="#" class="button-nav button-error"&gt;Error&lt;/button&gt;<br>
+            &lt;button href="#" class="button-nav button-disable"&gt;Disable&lt;/button&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <button class="button-nav button-error" >Error</button>
+        <button class="button-nav button-disable">Disable</button>
+
+      </section>
+
+
+
+      <section class="element">
+        <h3>Text Input Field amd select with Label</h3>
+
+        <h4>CSS selector:</h4>
+        <p>form div, label, input, select, .marleft</p>
+
+        <h4>Input Field and select Code:</h4>
+        <code>&lt;form method="post" action="#"&gt;<br>
+            &nbsp;&lt;div class="marleft"&gt;<br>
+            &nbsp;&nbsp;&lt;label for="form-name"&gt; Your Name: &lt;/label&gt;<br>
+            &nbsp;&nbsp;&lt;input type="text" id="form-name"&gt;<br>
+            &nbsp;&lt;/div&gt;<br>
+            <br>
+            &nbsp;&lt;div class="marleft"&gt;<br>
+            &nbsp;&nbsp;&lt;label for="form-flavor"&gt; Flavor: &lt;/label&gt;<br>
+            &nbsp;&nbsp;&lt;select name="flavor" id="form-flavor"&gt;<br>
+            &nbsp;&nbsp;&lt;option value="original"&gt; Original &lt;/option&gt;<br>
+            &nbsp;&nbsp;&lt;option value="chocolate"&gt; Chocolate &lt;/option&gt;<br>
+            &nbsp;&nbsp;&lt;option value="matcha"&gt; Matcha &lt;/option&gt;<br>
+            &nbsp;&nbsp;&lt;option value="strawberry"&gt; Strawberry &lt;/option&gt;<br>
+            &nbsp;&nbsp;&lt;option value="cookieAndCream"&gt; Cookie & Cream &lt;/option&gt;<br>
+            &nbsp;&nbsp;&lt;/select&gt;<br>
+            &nbsp;&lt;/div&gt;<br>
+            <br>
+            &nbsp;&lt;div class="marleft"&gt;<br>
+            &nbsp;&nbsp;&lt;label for="form-topping"&gt; Topping: &lt;/label&gt;<br>
+            &nbsp;&nbsp;&lt;select name="topping" id="form-topping"&gt;<br>
+            &nbsp;&nbsp;&lt;option value="vanillaIce"&gt; Vanilla Ice Cream &lt;/option&gt;<br>
+            &nbsp;&nbsp;&lt;option value="chocolateIce"&gt; Chocolate Ice Cream &lt;/option&gt;<br>
+            &nbsp;&nbsp;&lt;option value="sprinkles"&gt; Sprinkles &lt;/option&gt;<br>
+            &nbsp;&nbsp;&lt;option value="almond"&gt; Almond &lt;/option&gt;<br>
+            &nbsp;&nbsp;&lt;/select&gt;<br>
+            &nbsp;&lt;/div&gt;<br>
+            <br>
+            &nbsp;&lt;div class="marleft"&gt;<br>
+            &nbsp;&nbsp;&lt;label for="form-amount"&gt; Amount: &lt;/label&gt;<br>
+            &nbsp;&nbsp;&lt;input type="number" id="form-amount"&gt;<br>
+            &nbsp;&lt;/div&gt;<br>
+            &lt;/form&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <div>
+            <form method="post" action="#">
+                <div class="marleft">
+                    <label for="form-name"> Your Name:</label>
+                    <input type="text" id="form-name">
+                </div>
+                
+
+                <div class="marleft">
+                    <label for="form-flavor">Flavor:</label>
+                    <select name="flavor" id="form-flavor">
+                        <option value="original">Original</option>
+                        <option value="chocolate">Chocolate</option>
+                        <option value="matcha">Matcha</option>
+                        <option value="strawberry">Strawberry</option>
+                        <option value="cookieAndCream">Cookie & Cream</option>
+                    </select>
+                </div>
+
+                <div class="marleft">
+                    <label for="form-topping">Topping:</label>
+                    <select name="topping" id="form-topping">
+                        <option value="vanillaIce">Vanilla Ice Cream</option>
+                        <option value="chocolateIce">Chocolate Ice Cream</option>
+                        <option value="sprinkles">Sprinkles</option>
+                        <option value="almond">Almonds</option>
+                    </select>
+                </div>
+
+                <div class="marleft">
+                    <label for="form-amount">Amount:</label>
+                    <input type="number" id="form-amount">
+                </div>	
+            </form>
+        </div>
+      </section>
+
+
+
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+    <!--colour section-->
+    <section id="colour_elements" class="element_T">
+        <h2>Colour Elements</h2>
+
+        <section class="element">
+            <h3>Colour palette</h3>
+
+            <h4>CSS selector:</h4>
+            <p> .grid, .color_box, .color1, .color2, .color3, .color4, .color5, .color6, .color7</p>
+
+            <h4>Colour palette Code:</h4>
+            <code>
+                &lt;section class="grid eight-column six-column four-column two-column one-column"&gt;<br>
+                &lt;div class="color_box color1"&gt;<br>
+                &nbsp; RGB (255, 171, 44)<br>
+                &nbsp; HEX #FFAB2C<br>
+                &lt;/div&gt;<br>
+
+                &lt;div class="color_box color2"&gt;<br>
+                &nbsp; RGB (243, 91, 4)<br>
+                &nbsp; HEX #F35B04<br>
+                &lt;/div&gt;<br>
+
+                &lt;div class="color_box color3"&gt;<br>
+                &nbsp; RGB (236, 228, 183)<br>
+                &nbsp; HEX #ECE4B7<br>
+                &lt;/div&gt;<br>
+
+                &lt;div class="color_box color4"&gt;<br>
+                &nbsp; RGB (87, 184, 255)<br>
+                &nbsp; HEX #57B8FF<br>
+                &lt;/div&gt;<br>
+
+                &lt;div class="color_box color5"&gt;<br>
+                &nbsp; RGB (33, 118, 174)<br>
+                &nbsp; HEX #2176AE<br>
+                &lt;/div&gt;<br>
+
+                &lt;div class="color_box color6"&gt;<br>
+                &nbsp; RGB (255, 255, 255)<br>
+                &nbsp; HEX #FFFFFF<br>
+                &lt;/div&gt;<br>
+
+                &lt;div class="color_box color7"&gt;<br>
+                &nbsp; RGB (0,0,0)<br>
+                &nbsp; HEX #000000<br>
+                &lt;/div&gt;<br>
+
+                &lt;/section&gt;
+            </code>
+            <!-- colour palette from: https://coolors.co/palette/ffab2c-2176ae-57b8ff-011936-f35b04-->
+            <h4>Rendered element:</h4>
+            <div class="grid eight-column six-column four-column two-column one-column">
+                <div class="color_box color1">
+                    RGB (255, 171, 44)
+                    HEX #FFAB2C
+                </div>
+                <div class="color_box color2">
+                    RGB (243, 91, 4)
+                    HEX #F35B04
+                </div>
+                <div class="color_box color3">
+                    RGB (236, 228, 183)
+                    HEX #ECE4B7
+                </div>
+                <div class="color_box color4">
+                    RGB (87, 184, 255)
+                    HEX #57B8FF
+                </div>
+                <div class="color_box color5">
+                    RGB (33, 118, 174)
+                    HEX #2176AE
+                </div>
+                <div class="color_box color6">
+                    RGB (255, 255, 255)
+                    HEX #FFFFFF
+                </div>
+                <div class="color_box color7">
+                    RGB (0,0,0)
+                    HEX #000000
+                </div>
+            </div>
+        </section>
+
+
+    </section>
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements" class="element_T">
+      <h2>Text Elements</h2>
+
+      <section class="element">
+        <h3>Headings</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.hfont</p>
+
+        <h4>Heading Code:</h4>
+        <code>
+            &lt;h1 class="hfont"&gt;H1 : ChuChu. The H1 is the main page heading&lt;/h1&gt;<br>
+            &lt;h2 class="hfont"&gt;H2 : This is the heading for section&lt;/h2&gt;<br>
+            &lt;h3 class="hfont"&gt;H3 : This is a thrid level heading. usually use for menu list's title&lt;/h3&gt;<br>
+            &lt;h4 class="hfont"&gt;H4 : This is a fourth level heading.&lt;/h4&gt;<br>
+            &lt;h5 class="hfont"&gt;H5 : This heading font is quicksand! You can check the different size for heading and navigation button font&lt;/h4&gt;<br>
+        </code>
+
+        <h4>Rendered element:</h4>
+
+        <section class="element-item">
+            <h1 class="hfont"> H1 : ChuChu. The H1 is the main page heading</h1>
+            <h2 class="hfont"> H2 : This is the heading for section</h2>
+            <h3 class="hfont"> H3 : This is a thrid level heading. usually use for menu list's title</h3>
+            <h4 class="hfont"> H4 : This is a fourth level heading.</h4>
+            <h5 class="hfont"> H5 : This heading font is quicksand! You can check the different size for heading and navigation button font</h5>
+        </section>
+
+      </section>
+
+      <section class="element">
+        <h3>Paragraphs</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.pfont, .lfont</p>
+
+        <h4>paragraph Code:</h4>
+        <code>
+            &lt;p class="pfont"&gt;ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789. This font is Inconsolata that use for explanation that wrapped in p tag!&lt;/p&gt;<br>
+            &lt;p class="lfont"&gt;ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789. This font is Dosis that use for menu list and title for each list&lt;/p&gt;<br>
+        </code>
+
+        <h4>Rendered element:</h4>
+
+        <div class="element-item">
+            <p class="pfont"> ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789. This font is Inconsolata that use for explanation that wrapped in p tag!</p>
+            <p class="lfont"> ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789. This font is Dosis that use for menu list and title for each list</p>
+        </div>
+      </section>
+
+      <section class="element">
+        <h3>Numbered Lists</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.hfont,.lfont, ol, li</p>
+
+        <h4>Numbered lists Code:</h4>
+        <code>
+            &lt;h3 id="flavor" class="hfont"&gt; Flavor &lt;/h3&gt;<br>
+            &nbsp;&lt;ol class="lfont"&gt;<br>
+            &nbsp;&nbsp;&lt;li&gt; Original - $25 &lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;li&gt; Chocolate - $30 &lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;li&gt; Matcha - $30 &lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;li&gt; Strawberry - $32 &lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;li&gt; Cookie and Cream - $33 &lt;/li&gt;<br>
+            &nbsp;&lt;/ol&gt;<br>
+            <br>
+            &lt;h3 id="topping" class="hfont"&gt; Topping &lt;/h3&gt;<br>
+            &nbsp;&lt;ol class="lfont"&gt;<br>
+            &nbsp;&nbsp;&lt;li&gt; Vanilla ice cream - $5 &lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;li&gt; Chocolate ice cream - $7 &lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;li&gt; Sprinkles - $3 &lt;/li&gt;<br>
+            &nbsp;&nbsp;&lt;li&gt; Almonds - $4 &lt;/li&gt;<br>
+            &nbsp;&lt;/ol&gt;<br>
+            
+        </code>
+
+        <h4>Rendered element:</h4>
+
+        <section class="element-item">
+            <h3 id="flavor" class="hfont"> Flavor </h3>
+            <ol class="lfont">
+                <li>Original - $25</li>
+                <li>Chocolate - $30</li>
+                <li>Matcha - $30</li>
+                <li>Strawberry - $32</li>
+                <li>Cookie and Cream - $33</li>
+            </ol>
+
+            <h3 id="topping" class="hfont"> Topping</h3>
+            <ol class="lfont">
+                <li>Vanilla ice cream - $5</li>
+                <li>Chocolate ice cream - $7</li>
+                <li>Sprinkles - $3</li>
+                <li>Almonds - $4</li>
+            </ol>
+
+        </section>
+
+        <section class="element" >
+            <h3>Icons</h3>
+
+            <h4>CSS selector:</h4>
+            <p>.nodot, .grid</p>
+
+            <h4>In-text link Code:</h4>
+            <code>&lt;ul class="nodot grid four-column two-column one-column"&gt;<br>
+                &nbsp;&lt;li&gt; &lt;img src="icon/001-home.svg" alt="icon - home"&gt; icon - home &lt;/li&gt; <br>
+                &nbsp;&lt;li&gt; &lt;img src="icon/058-ticket.svg" alt="icon - ticket"&gt; icon - ticket &lt;/li&gt; <br>
+                &nbsp;&lt;li&gt; &lt;img src="icon/059-cart.svg" alt="icon - cart"&gt; icon - cart &lt;/li&gt; <br>
+                &nbsp;...<!--repeat-->...<br>
+                &nbsp;&lt;li&gt; &lt;img src="icon/234-grin.svg" alt="icon - grin"&gt; icon - grin &lt;/li&gt; <br>
+                &lt;/ul&gt;</code>
+
+        <h4>Rendered element:</h4>
+
+            <!-- icon reference: https://icomoon.io/#preview-free-->
+            <ul class="nodot grid four-column two-column one-column">
+                <li><img src="icon/001-home.svg" alt="icon - home"> icon - home</li>
+                <li><img src="icon/058-ticket.svg" alt="icon - ticket"> icon - ticket</li>
+                <li><img src="icon/059-cart.svg" alt="icon - cart"> icon - cart</li>
+                <li><img src="icon/060-coin-dollar.svg" alt="icon - coin dollar"> icon - coin dollar</li>
+                <li><img src="icon/064-credit-card.svg" alt="icon - card"> icon - card</li>
+                <li><img src="icon//072-location.svg" alt="icon - location"> icon - location</li>
+                <li><img src="icon/079-clock.svg" alt="icon - clock"> icon - clock</li>
+                <li><img src="icon/114-user.svg" alt="icon - user"> icon - user</li>
+                <li><img src="icon/160-gift.svg" alt="icon - gift"> icon - gift</li>
+                <li><img src="icon/219-heart.svg" alt="icon - heart"> icon - heart</li>
+                <li><img src="icon/234-grin.svg" alt="icon - grin"> icon - grin</li>
+            </ul>
+
+        </section>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements" class="element_T">
+      <h2>Combined Elements</h2>
+
+        <section class="element">
+            <h3>Main Navigation</h3>
+
+            <h4>CSS selector:</h4>
+            <p>.nav-item, .grid</p>
+
+            <h4>Colour palette Code:</h4>
+            <code>
+                &lt;nav class=:"grid eight-column six-column four-column two-column one-column add-gutters"&gt;<br>
+                &nbsp;&lt;a href="#home" class="nav-item"&gt; Home &lt;/a&gt;<br>
+                &nbsp;&lt;a href="#about_us" class="nav-item"&gt; About Us &lt;/a&gt;<br>
+                &nbsp;&lt;a href="#menu" class="nav-item"&gt; Menu &lt;/a&gt;<br>
+                &nbsp;&lt;a href="#order_online" class="nav-item"&gt; Order Online &lt;/a&gt;<br>
+                &nbsp;&lt;a href="#location" class="nav-item"&gt; Location &lt;/a&gt;<br>
+                &nbsp;&lt;a href="#news" class="nav-item"&gt; News &lt;/a&gt;<br>
+                &nbsp;&lt;a href="#support" class="nav-item"&gt; Support &lt;/a&gt;<br>
+                &nbsp;&lt;a href="#profile" class="nav-item"&gt; Profile &lt;/a&gt;<br>
+                &lt;/nav&gt;
+            </code>
+            
+            <h4>Rendered element:</h4>
+            
+
+            <nav class="grid eight-column six-column four-column two-column one-column add-gutters">        
+                <a class="nav-item "> Home </a>
+                <a class="nav-item ">About Us</a>
+                <a class="nav-item ">Menu</a>
+                <a class="nav-item ">Order Online</a>
+                <a class="nav-item ">Location</a>
+                <a class="nav-item ">News</a>
+                <a class="nav-item ">Support</a>
+                <a class="nav-item ">Profile</a>
+            </nav>
+
+
+
+        </section>
+
+      <section class="element">
+        <h3>Product/Service Image with link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.grid, .container, .image, .overlay, .text</p>
+
+        <h4>Product Image with link Code:</h4>
+        <code>
+            
+            &lt;div class="container"&gt;<br>
+            &nbsp;&lt;a href="#flavor"&gt;<br>
+            &nbsp;&nbsp;&lt;img src="img/original_c.jpg" alt="original flavor churros image" class="image"&gt;<br>
+            &nbsp;&nbsp;&lt;div class="overlay"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="text"&gt;Flavor&lt;/a&gt;<br>
+            &nbsp;&nbsp;&lt;/div&gt;<br>
+            &nbsp;&lt;/a&gt;<br>
+            &lt;/div&gt;<br>
+            <br>
+            &lt;div class="container"&gt;<br>
+            &nbsp;&lt;a href="#topping"&gt;<br>
+            &nbsp;&nbsp;&lt;img src="img/churo_t.jpg" alt="topping image" class="image"&gt;<br>
+            &nbsp;&nbsp;&lt;div class="overlay"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="text"&gt;Topping&lt;/a&gt;<br>
+            &nbsp;&nbsp;&lt;/div&gt;<br>
+            &nbsp;&lt;/a&gt;<br>
+            &lt;/div&gt;     
+           
+
+        </code>
+
+
+        <h4>Rendered element:</h4>
+
+        <!-- image and text reference: https://www.w3schools.com/howto/howto_css_image_text.asp-->
+        <div class="grid four-column two-column one-column">
+            <div class="container">
+                <a href="#flavor">
+                    <img src="img/original_c.jpg" alt="original flavor churros image" class="image">
+                    <div class="overlay">
+                        <div class="text">Flavor</div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="container">
+                <a href="#topping">
+                    <img src="img/churo_t.jpg" alt="topping image" class="image">
+                    <div class="overlay">
+                        <div class="text">Topping</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    
+        
+        </section>
+
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+
+
+    <section id="citations" class="element_T">
+      <h2>Citations</h2>
+
+      <ul>
+        <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
+        <li>Impallari, Pablo. Type designer. 2019. <strong>Dosis [font]</strong>. Retrieved from <a class="lfont" href="https://fonts.google.com/specimen/Dosis?category=Sans+Serif&sort=popularity&preview.text=12345678910%20abcdsefsd&preview.size=50&preview.text_type=custom#about"> Dosis font at Google font</a></li>
+        <li>Levien, Raph. Principal designer. 2015. <strong>Inconsolata [font]</strong>. Retrieved from <a class="pfont" href="https://fonts.google.com/specimen/Inconsolata?query=incon&sort=popularity&preview.text=12345678910%20abcdsefsd&preview.size=50&preview.text_type=custom#about"> Inconsolata font at Google font</a></li>
+        <li>paglinawan, Andrew. Principal designer. 2008. <strong>Quicksand [font]</strong>. Retrieved from <a class="hfont" href="https://fonts.google.com/specimen/Quicksand?query=quick&sort=popularity&preview.text=12345678910%20abcdsefsd&preview.size=50&preview.text_type=custom#about"> Quicksand font at Google font</a></li>
+        <li>IconMoon. <strong>IconMoon's Free icon [Icon]</strong>. Retrieved from <a href="https://icomoon.io/#icons-icomoon"> Iconmoon free pack</a></li>
+        <li> <strong>topping churro [image]</strong>. Retrieved from <a href="http://www.thespiceathome.com/wp-content/uploads/2018/07/ChurroBar14.jpg">topping image</a>.</li>
+        <li> <strong>original churro [image]</strong>. Retrieved from <a href="https://static.toiimg.com/thumb/75672255.cms?width=1200&height=900">original chrro image</a>.</li>
+    </ul>
+
+    </section>
+
+
+    <div id="footer" class="element">
+        <p class="marleft"> This website is created by Sooa Mo.
+            This page was last updated 2022-5-31
+        </p>
+        <a href="#top" class="intext_link">Top</a>
+        
+    </div>
+
+
+  </body>
+</html>

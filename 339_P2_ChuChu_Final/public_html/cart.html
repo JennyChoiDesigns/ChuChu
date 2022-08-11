@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        
+        <title>ChuChu</title>
+    
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/grid.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+       
+    
+        <!--font quicksand, inconsolata, dosis-->
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Inconsolata&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+        
+        <!-- get this line for icon reference:https://www.w3schools.com/icons/icons_reference.asp -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    </head>
+    <body>
+       
+      <div id="myTopnav" class="header"> 
+        <nav>
+            <a href="index.html" class="logo font_Quicksand">ChuChu</a>       
+              <div class="header-right">
+                <a href="index.html" > Home </a>
+                <a href="menu.html" >Menu</a>
+                <a href="location.html" >Location</a>
+                <a href="cart.html" >
+                    <i class="material-icons">shopping_cart</i>
+                    </a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+    </div>
+
+            <h1 class="text_center2 font_Dosis">Carts</h1>
+
+            <section class="flex_cart">
+                <div class="row">
+                    <div class="col-70">
+                      <div class="container_cart">
+                        
+                        <h2> <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h2>
+                        <div class="cart_item">
+                          <div class="cartItem_detail title">
+                            <!-- input checkbox reference: https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_checkbox-->
+                            <p><input type="checkbox" id="cartTitle" name="cartList" value="cartItem_"></p>
+                            <p>Size</p>
+                            <p>Product</p>
+                            <p>Topping</p>
+                            <p>Quantity </p>
+                            <p>Price</p>
+                          </div>
+                          <div class="cartItem_detail item">
+                            <p><input type="checkbox" id="cartTitle" name="cartList" value="cartItem_1"></p>
+                            <p>6 in</p>
+                            <a href="detailsMiss.html"><img src="img/original_c.jpg" alt="original flavor churros image" class="product_image_Cart"></a>
+                            <p> Vanilla Ice </p>
+                            <p> 2 </p>
+                            <span class="price">$ 14.5</span>
+                          </div>
+                          <div class="cartItem_detail item">
+                            <p><input type="checkbox" id="cartTitle" name="cartList" value="cartItem_2"></p>
+                            <p>9 in</p>
+                            <a href="detailsChoco.html"><img src="img/choco_c.jpg" alt="Chocolate flavor churros image" class="product_image_Cart"></a>
+                            <p> Chocolate Ice </p>
+                            <p> 1 </p>
+                            <span class="price">$ 10</span>
+                          </div>
+                          <div class="cartItem_detail item">
+                            <p><input type="checkbox" id="cartTitle" name="cartList" value="cartItem_3"></p>
+                            <p>6 in</p>
+                            <a href="detailsVery.html"><img src="img/straw_c.jpg" alt="Strawberry flavor churros image" class="product_image_Cart"></a>
+                            <p> Sprinkles</p>
+                            <p> 1 </p>
+                            <span class="price">$ 7.75</span>
+                          </div>
+                          <div class="cartItem_detail">
+                            <p><input type="checkbox" id="cartTitle" name="cartList" value="cartItem_4"></p>
+                            <p>Medium</p>
+                            <a href="detailsOrange.html"><img src="img/OJ.jpg" alt="orange Juice image" class="product_image_Cart"></a>
+                            <p> Ice - 50%</p>
+                            <p> 1 </p>
+                            <span class="price">$ 6.25</span>
+                          </div>
+                        </div>
+                        <div class="cartItem_detail">
+                          <p>  </p>
+                          <p>  </p>
+                          <p>  </p>
+                          <p>  </p>
+                          <p class="fontSizeUp"> Total: </p>
+                          <span class="price total fontSizeUp"> $ 38.50 </span>
+                        </div>
+                        <div class="cartItem_button">
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <a href="#" class="deleteButton"> Delete </a>
+                          <a href="checkOut.html" class="payButton"> Check-Out </a>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  
+            </section>
+
+            <div class="footer">
+            
+              <div class="text-right">
+                  <p>Team ChuChu</p>
+                  <p>IAT 339 : Summer 2022</p>
+              </div>
+  
+              <div class="footer_logo">
+                  <a href="index.html" class="logo font_Quicksand">ChuChu</a> 
+              </div>
+  
+              <div class="flex_top">
+                  <a href="#myTopnav" class="top"> top
+                  <i class="material-icons">expand_less</i>
+                 </a>
+              </div> 
+              
+          </div>
+
+            <script src="js/nav.js"></script>
+            <script src="js/modal.js"></script>
+    </body>
+</html>

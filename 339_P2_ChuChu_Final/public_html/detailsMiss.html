@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        
+        <title>ChuChu</title>
+    
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/grid.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+       
+    
+        <!--font quicksand, inconsolata, dosis-->
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Inconsolata&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+        
+        <!-- get this line for icon reference:https://www.w3schools.com/icons/icons_reference.asp -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    </head>
+    <body>
+       
+        <div id="myTopnav" class="header"> 
+            <nav>
+                <a href="index.html" class="logo font_Quicksand">ChuChu</a>       
+                  <div class="header-right">
+                    <a href="index.html" > Home </a>
+                    <a href="menu.html" >Menu</a>
+                    <a href="location.html" >Location</a>
+                    <a href="cart.html" >
+                        <i class="material-icons">shopping_cart</i>
+                        </a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+
+
+        
+
+        <h1 class="text_center2 font_Dosis">Details</h1>
+        <div class="form">
+            <div id="productDetail" class="detailsWrapper one two">
+                <div class="detailImg">
+                    <img src="img/original_c.jpg" alt="original flavor churros image">
+                </div>
+                <div class="detailForm one">
+                    <div class="detailText">
+                        <h2>Miss-Chu</h2>
+                        <p>“Crispy, Original Churros”</p>
+                        <p class="price">$5.25</p>
+                    </div>
+                    <div class="detailSelect">
+                        <label for="form-topping">Topping:</label>
+                        <select name="topping" id="form-topping">
+                            <option value="vanillaIce">Vanilla Ice Cream - $2 </option>
+                            <option value="chocolateIce">Chocolate Ice Cream - $2.5</option>
+                            <option value="sprinkles">Sprinkles - $1</option>
+                            <option value="almond">Almonds - $1.5</option>
+                        </select>
+
+                        <label for="form-topping">Size:</label>
+                        <select name="size" id="form-size">
+                            <option value="6in">6 in - $5.25</option>
+                            <option value="9in">9 in- $7</option>
+                            <option value="12in">12 in - $9</option>
+                        </select>
+
+                        <label for="form-quantity">Quantity:</label>
+                        <input type="number" id="form-name" class="quantity" value="1" min="1" max="99">
+                    
+                        <div class="detailButton">
+                            <!-- Trigger/open the modal-->
+                            <button class="cartButton" id="addCart"> <i class="material-icons">shopping_cart</i> Add Cart</button>
+
+                            <!-- The Modal reference: https://www.w3schools.com/howto/howto_css_modals.asp-->
+                            <div id="addCartModal" class="modal">
+
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <p>HooRay-! Added to cart!</p>
+                                </div>
+                            </div>
+                            <a href="cart.html" class="buyButton" id="buyNow"> <i class="material-icons">attach_money</i> Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            
+
+        <h2 class="text_center2 font_Dosis"> More Items </h2>
+        <div id="moreItem" >
+            <section>
+                <div class="grid containerWrap three-column two-column one-column">
+                   
+        
+                    <div class="product_container">
+                        <div class="product_img">
+                            <a id="chocoChuB" href="detailsChoco.html">
+                                <img src="img/choco_c.jpg" alt="original flavor churros image" class="product_image">
+                            </a>
+                        </div>
+                        <div class="product_text">
+                            <h3>Choco-Chu</h3>
+                            <p>“Churros dipped with Milky Chocolate”</p>
+                            <p class="price">$6.75</p>
+                        </div>
+                        <div class="product_link">
+                            <a id="chocoChuB" href="detailsChoco.html" class="button">Check Details</a>
+                        </div>
+                    </div>
+    
+                    <div class="product_container">
+                        <div class="product_img">
+                            <a id="veryBerryChuB" href="detailsVery.html">
+                                <img src="img/straw_c.jpg" alt="original flavor churros image" class="product_image">
+                            </a>
+                        </div>
+                        <div class="product_text">
+                            <h3>Very-Berry-Chu</h3>
+                            <p>“Churros dipped with Fresh Strawberry”</p>
+                            <p class="price">$6.75</p>
+                        </div>
+                        <div class="product_link">
+                            <a id="veryBerryChuB" href="detailsVery.html" class="button">Check Details</a>
+                        </div>
+                    </div>
+
+                    <div class="product_container">
+                        <div class="product_img">
+                            <a id="orangeJuiceB" href="detailsOrange.html">
+                                <img src="img/OJ.jpg" alt="orange Juice image" class="product_image">
+                            </a>
+                            </div>
+                        <div class="product_text">
+                            <h3>Orange-Ju</h3>
+                            <p>“Fresh Orange with Ice”</p>
+                            <p class="price">$9.50</p>
+                        </div>
+                        <div class="product_link">
+                            <a id="orangeJuiceB" href="detailsOrange.html" class="button">Check Details</a>
+                        </div>
+                    </div>
+    
+                </div>
+    
+               
+
+                   
+                
+    
+    
+            </section>
+
+        </div>
+
+        <div class="footer">
+            
+            <div class="text-right">
+                <p>Team ChuChu</p>
+                <p>IAT 339 : Summer 2022</p>
+            </div>
+
+            <div class="footer_logo">
+                <a href="index.html" class="logo font_Quicksand">ChuChu</a> 
+            </div>
+
+            <div class="flex_top">
+                <a href="#myTopnav" class="top"> top
+                <i class="material-icons">expand_less</i>
+               </a>
+            </div> 
+            
+        </div>
+
+          <script src="js/nav.js"></script>
+          <script src="js/modal.js"></script>
+    
+        </body>
+    </html>
+    
+            

@@ -1,0 +1,97 @@
+/* checkout format https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_checkout_form
+    hover part is on style guide css.
+*/
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+  }
+  
+  .col-30 {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+  }
+  
+  .col-45 {
+    -ms-flex: 45%; /* IE10 */
+    flex: 45%;
+  }
+  
+  .col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+  }
+  
+  .col-30,
+  .col-45,
+  .col-50 {
+    padding: 0 1rem;
+  }
+  .row a{
+    color:#FEC64D;
+  }
+  
+  .container_checkout {
+    background-color: rgb(235, 235, 235);
+    padding: 0.1rem 1rem 1rem 1rem;
+    border: 0.05rem solid lightgrey;
+    border-radius: 0.15rem;
+  }
+  
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 0.05rem solid #ccc;
+    border-radius: 0.15rem;
+  }
+
+  label {
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  .icon-container {
+    margin-bottom:1rem;
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+  }
+  
+  .btn {
+    background-color: #FEC64D;
+    color: white;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: none;
+    width: 100%;
+    border-radius: 0.15rem;
+    cursor: pointer;
+    font-size:1rem;
+  }
+  
+  .btn:hover {
+    background-color: #F88751;
+    color:black;
+  }
+  
+
+  hr {
+    border: 0.05rem solid lightgrey;
+  }
+  
+  span.price {
+    float: right;
+    color: grey;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+  @media (max-width: 50rem) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-30 {
+      margin-bottom: 1.25rem;
+    }
+  }

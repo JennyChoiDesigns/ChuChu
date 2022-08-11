@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        
+        <title>ChuChu</title>
+    
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/grid.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+       
+    
+        <!--font quicksand, inconsolata, dosis-->
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Inconsolata&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+        
+        <!-- get this line for icon reference:https://www.w3schools.com/icons/icons_reference.asp -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    </head>
+    <body>
+       
+      <div id="myTopnav" class="header"> 
+        <nav>
+            <a href="index.html" class="logo font_Quicksand">ChuChu</a>       
+              <div class="header-right">
+                <a href="index.html" > Home </a>
+                <a href="menu.html" >Menu</a>
+                <a href="location.html" >Location</a>
+                <a href="cart.html" >
+                    <i class="material-icons">shopping_cart</i>
+                    </a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+    </div>
+<!-- checkout reference: https://www.w3schools.com/howto/howto_css_checkout_form.asp-->
+            <h1 class="text_center2 font_Dosis">Check-Out</h1>
+
+            <div class="container_bill">
+
+                <form action="bill">
+            
+                    <div class="row_bill">
+            
+                        <div class="col_bill">
+            
+                            <h2 class="title_bill">billing address</h2>
+            
+                            <div class="inputBox_bill">
+                                <label for="fullname">Full Name :</label>
+                                <input type="text" id="fullname" name="fullname" placeholder="John More Doe">
+                            </div>
+                            <div class="inputBox_bill half">
+                                <label for="email">Email :</label>
+                                <input type="email" id="email" name="email" placeholder="example@email.com">
+                            </div>
+                            <div class="inputBox_bill half">
+                                <label for="address">Address 1:</label>
+                                <input type="text" id="address" name="address" placeholder="9688 162A St">
+                            </div>
+                                <div class="inputBox_bill">
+                                    <label for="apartmentnumber">Address 2:</label>
+                                    <input type="text" id="apartmentnumber" name="apartmentnumber" placeholder="apartment # or none etc.">                 
+                                </div>
+                            <div class="inputBox_bill half">
+                                <label for="city">City :</label>
+                                <input type="text" id="city" name="city" placeholder="Vancouver">
+                            </div>
+                            <div class="grid_bill">
+                                <div class="inputBox_bill">
+                                    <label for="province/state">Province/State :</label>
+                                    <input type="text" id="province/state" name="province/state" placeholder="British Columbia">
+                                </div>
+                                <div class="inputBox_bill">
+                                    <label for="postalcode">Postal code :</label>
+                                    <input type="text" id="postalcode" name="postalcode" placeholder="V0V 0M0">
+                                </div>
+                            </div>
+            
+                        </div>
+            
+                        <div class="col_bill">
+            
+                            <h2 class="title_bill">payment</h2>
+            
+                            <div class="inputBox_bill">
+                                <span>Cards Accepted :</span>
+                                <div class="inputBox_bill">
+                                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                    <i class="fa fa-cc-amex" style="color:blue;"></i>
+                                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                                </div>
+                            </div>
+                            <div class="inputBox_bill">
+                                <label for="nameoncard">Name on Card :</label>
+                                <input type="text" id="nameoncard" name="nameoncard" placeholder="John More Doe">
+                            </div>
+                            <div class="inputBox_bill half">
+                                <label for="creditcardnumber">Credit Card Number :</label>
+                                <input type="text" id="creditcardnumber" name="creditcardnumber" placeholder="1111-2222-3333-4444">
+                            </div>
+                            <div class="flex_bill">
+                                <div class="inputBox_bill">
+                                    <label for="expirymonth">Exp Month/year:</label>
+                                    <input type="text" id="expirymonth" name="expirymonth" placeholder="May">
+                                    <input type="text" id="expiryyear" name="expiryyear" placeholder="2022">
+                                </div>
+                                <div class="inputBox_bill">
+                                    <label for="CVV">CVV :</label>
+                                    <input type="text" id="CVV" name="CVV" placeholder="000">
+                                </div>
+                            </div>
+            
+                        </div>
+                
+                    </div>
+                    <div class="flex_btn">
+                        <a class="btn_bill back" href="cart.html">BACK</a>
+                        <a class="btn_bill" href="confirm.html">CONFIRM</a>
+                    </div>
+                </form>
+            
+            </div>
+
+            <div class="footer">
+            
+                <div class="text-right">
+                    <p>Team ChuChu</p>
+                    <p>IAT 339 : Summer 2022</p>
+                </div>
+    
+                <div class="footer_logo">
+                    <a href="index.html" class="logo font_Quicksand">ChuChu</a> 
+                </div>
+    
+                <div class="flex_top">
+                    <a href="#myTopnav" class="top"> top
+                    <i class="material-icons">expand_less</i>
+                   </a>
+                </div> 
+                
+            </div>
+
+            <script src="js/nav.js"></script>
+    </body>
+</html>
